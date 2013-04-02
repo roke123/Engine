@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4825542-E13C-4D5E-BE19-D75213867770}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\常用软件\DirectX\Include;D:\常用软件\DirectX\Samples\C++\Effects11\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\常用软件\DirectX\Samples\C++\Effects11\Debug;D:\常用软件\DirectX\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dinput8.lib;d2d1.lib;dxguid.lib;Windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AlphaAnimation.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationBase.h" />
+    <ClInclude Include="AnimationGroup.h" />
+    <ClInclude Include="BoundingEntity.h" />
+    <ClInclude Include="BoundingRectangle.h" />
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="ClipFilter.h" />
+    <ClInclude Include="Clock.h" />
+    <ClInclude Include="D2DDrawTool.h" />
+    <ClInclude Include="DrawTool.h" />
+    <ClInclude Include="GlobalFunction.h" />
+    <ClInclude Include="GraphType.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="IntersectionBlock.h" />
+    <ClInclude Include="IntersectionSystem.h" />
+    <ClInclude Include="Matrix3x3.h" />
+    <ClInclude Include="MovableAnimation.h" />
+    <ClInclude Include="MovableBoundingImage.h" />
+    <ClInclude Include="MyFactory.h" />
+    <ClInclude Include="PathAnimation.h" />
+    <ClInclude Include="PtrList.h" />
+    <ClInclude Include="RectangleClipFilter.h" />
+    <ClInclude Include="RefObject.h" />
+    <ClInclude Include="ScaleAnimation.h" />
+    <ClInclude Include="SoundSystem.h" />
+    <ClInclude Include="SwapChain2D.h" />
+    <ClInclude Include="TestWin.h" />
+    <ClInclude Include="Vertex2D_F.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlphaAnimation.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationGroup.cpp" />
+    <ClCompile Include="BoundingEntity.cpp" />
+    <ClCompile Include="BoundingRectangle.cpp" />
+    <ClCompile Include="BoundingSphere.cpp" />
+    <ClCompile Include="ClipFilter.cpp" />
+    <ClCompile Include="D2DDrawTool.cpp" />
+    <ClCompile Include="DrawTool.cpp" />
+    <ClCompile Include="GlobalFunction.cpp" />
+    <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="IntersectionBlock.cpp" />
+    <ClCompile Include="IntersectionSystem.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Matrix3x3.cpp" />
+    <ClCompile Include="MovableAnimation.cpp" />
+    <ClCompile Include="MovableBoundingImage.cpp" />
+    <ClCompile Include="MyFactory.cpp" />
+    <ClCompile Include="PathAnimation.cpp" />
+    <ClCompile Include="PtrList.cpp" />
+    <ClCompile Include="RectangleClipFilter.cpp" />
+    <ClCompile Include="ScaleAnimation.cpp" />
+    <ClCompile Include="SoundSystem.cpp" />
+    <ClCompile Include="SwapChain2D.cpp" />
+    <ClCompile Include="TestWin.cpp" />
+    <ClCompile Include="Vertex2D_F.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

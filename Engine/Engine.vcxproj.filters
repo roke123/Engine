@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="碰撞系统">
+      <UniqueIdentifier>{cd12c829-d961-4b9e-8f92-7b088a2d2526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="渲染系统">
+      <UniqueIdentifier>{10628dbb-9af4-4dd4-b445-5a03c1a4fb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="基础类型">
+      <UniqueIdentifier>{41fd15ad-837f-436e-a554-f67545e118c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="基础类型\cpp文件">
+      <UniqueIdentifier>{ae4f7e62-64e7-4388-bb0f-725fc67e0dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="渲染系统\cpp文件">
+      <UniqueIdentifier>{1f06ae69-0a9d-48be-8a93-eda77a88e45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="碰撞系统\cpp文件">
+      <UniqueIdentifier>{082d6819-fa89-4cf7-abc2-17def38dac1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="动画系统">
+      <UniqueIdentifier>{f3d57b8d-4b1c-4b81-b17e-0933643ba6f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="动画系统\头文件">
+      <UniqueIdentifier>{3c4621c7-1ab9-4dd1-b8ae-ad3461e9d83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="输入系统">
+      <UniqueIdentifier>{69567e3e-242b-44a1-b7af-29f4db3a5c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="输入系统\cpp文件">
+      <UniqueIdentifier>{78a54b9c-4d2e-4f08-89a3-f2f982df68d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="音乐系统">
+      <UniqueIdentifier>{47bd79a1-7d9b-42bd-9e41-d295af182d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="音乐系统\cpp文件">
+      <UniqueIdentifier>{c9f57494-5e1b-4118-a27b-b40d63607711}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix3x3.cpp">
+      <Filter>基础类型\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalFunction.cpp">
+      <Filter>基础类型\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClipFilter.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="D2DDrawTool.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFactory.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleClipFilter.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SwapChain2D.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionBlock.cpp">
+      <Filter>碰撞系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionSystem.cpp">
+      <Filter>碰撞系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingRectangle.cpp">
+      <Filter>碰撞系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingSphere.cpp">
+      <Filter>碰撞系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingEntity.cpp">
+      <Filter>碰撞系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PtrList.cpp">
+      <Filter>碰撞系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTool.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableBoundingImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>动画系统\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableAnimation.cpp">
+      <Filter>动画系统\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PathAnimation.cpp">
+      <Filter>动画系统\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex2D_F.cpp">
+      <Filter>基础类型\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleAnimation.cpp">
+      <Filter>动画系统\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AlphaAnimation.cpp">
+      <Filter>动画系统\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationGroup.cpp">
+      <Filter>动画系统\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>输入系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSystem.cpp">
+      <Filter>音乐系统\cpp文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D2DDrawTool.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTool.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipFilter.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingEntity.h">
+      <Filter>碰撞系统</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingRectangle.h">
+      <Filter>碰撞系统</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingSphere.h">
+      <Filter>碰撞系统</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionBlock.h">
+      <Filter>碰撞系统</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionSystem.h">
+      <Filter>碰撞系统</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalFunction.h">
+      <Filter>基础类型</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphType.h">
+      <Filter>基础类型</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapChain2D.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleClipFilter.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFactory.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix3x3.h">
+      <Filter>基础类型</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock.h">
+      <Filter>基础类型</Filter>
+    </ClInclude>
+    <ClInclude Include="PtrList.h">
+      <Filter>碰撞系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableBoundingImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationGroup.h">
+      <Filter>动画系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>动画系统</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableAnimation.h">
+      <Filter>动画系统</Filter>
+    </ClInclude>
+    <ClInclude Include="PathAnimation.h">
+      <Filter>动画系统</Filter>
+    </ClInclude>
+    <ClInclude Include="AlphaAnimation.h">
+      <Filter>动画系统</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleAnimation.h">
+      <Filter>动画系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex2D_F.h">
+      <Filter>基础类型</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationBase.h">
+      <Filter>动画系统</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>输入系统</Filter>
+    </ClInclude>
+    <ClInclude Include="RefObject.h">
+      <Filter>基础类型</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSystem.h">
+      <Filter>音乐系统</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

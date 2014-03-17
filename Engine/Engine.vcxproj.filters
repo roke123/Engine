@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="渲染系统">
+      <UniqueIdentifier>{10628dbb-9af4-4dd4-b445-5a03c1a4fb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="渲染系统\cpp文件">
+      <UniqueIdentifier>{1f06ae69-0a9d-48be-8a93-eda77a88e45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="应用框架">
+      <UniqueIdentifier>{8695b24f-2301-4f57-9330-912cdee980a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="应用框架\cpp文件">
+      <UniqueIdentifier>{678b7738-97c7-488b-8136-5b2e9ee0c767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="时间控制系统">
+      <UniqueIdentifier>{003e9fcd-7d42-4609-bb75-e9dcc37a4b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="输入控制系统">
+      <UniqueIdentifier>{69567e3e-242b-44a1-b7af-29f4db3a5c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="输入控制系统\cpp文件">
+      <UniqueIdentifier>{78a54b9c-4d2e-4f08-89a3-f2f982df68d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="音乐管理系统">
+      <UniqueIdentifier>{47bd79a1-7d9b-42bd-9e41-d295af182d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="音乐管理系统\cpp文件">
+      <UniqueIdentifier>{c9f57494-5e1b-4118-a27b-b40d63607711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="动画管理系统">
+      <UniqueIdentifier>{f3d57b8d-4b1c-4b81-b17e-0933643ba6f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="动画管理系统\cpp文件">
+      <UniqueIdentifier>{3c4621c7-1ab9-4dd1-b8ae-ad3461e9d83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="碰撞处理系统">
+      <UniqueIdentifier>{cd12c829-d961-4b9e-8f92-7b088a2d2526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="碰撞处理系统\cpp文件">
+      <UniqueIdentifier>{082d6819-fa89-4cf7-abc2-17def38dac1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="错误输出系统">
+      <UniqueIdentifier>{e1c1fc68-e4fa-48c6-b7c1-7f140598e0ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="错误输出系统\cpp文件">
+      <UniqueIdentifier>{83050d33-c9b1-4c30-9002-18971b7ba07d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="基础类">
+      <UniqueIdentifier>{41fd15ad-837f-436e-a554-f67545e118c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="基础类\cpp文件">
+      <UniqueIdentifier>{ae4f7e62-64e7-4388-bb0f-725fc67e0dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="时间控制系统\头文件">
+      <UniqueIdentifier>{b84274a6-aa56-4de9-8863-120c47f897fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TankFight">
+      <UniqueIdentifier>{009ca358-ecf1-4029-97b4-95f4f4d1f7bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Matrix3x3.cpp">
+      <Filter>基础类\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalFunction.cpp">
+      <Filter>基础类\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="D2DDrawTool.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SwapChain2D.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionBlock.cpp">
+      <Filter>碰撞处理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionSystem.cpp">
+      <Filter>碰撞处理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingRectangle.cpp">
+      <Filter>碰撞处理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingSphere.cpp">
+      <Filter>碰撞处理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingEntity.cpp">
+      <Filter>碰撞处理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTool.cpp">
+      <Filter>渲染系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>动画管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleAnimation.cpp">
+      <Filter>动画管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AlphaAnimation.cpp">
+      <Filter>动画管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationGroup.cpp">
+      <Filter>动画管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>输入控制系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSystem.cpp">
+      <Filter>音乐管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveSound.cpp">
+      <Filter>音乐管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationSystem.cpp">
+      <Filter>动画管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableAnimation.cpp">
+      <Filter>动画管理系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InputControllerManager.cpp">
+      <Filter>输入控制系统\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleApp.cpp">
+      <Filter>应用框架\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSystem.cpp">
+      <Filter>时间控制系统\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleClipFilter.cpp">
+      <Filter>基础类\cpp文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex2D.cpp">
+      <Filter>基础类</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeEvent.cpp">
+      <Filter>时间控制系统</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+    <ClCompile Include="TankFight.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+    <ClCompile Include="InitialInterface.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+    <ClCompile Include="Home.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>TankFight</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D2DDrawTool.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTool.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingEntity.h">
+      <Filter>碰撞处理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingRectangle.h">
+      <Filter>碰撞处理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingSphere.h">
+      <Filter>碰撞处理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionBlock.h">
+      <Filter>碰撞处理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionSystem.h">
+      <Filter>碰撞处理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalFunction.h">
+      <Filter>基础类</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphType.h">
+      <Filter>基础类</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapChain2D.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix3x3.h">
+      <Filter>基础类</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>渲染系统</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationGroup.h">
+      <Filter>动画管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>动画管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="AlphaAnimation.h">
+      <Filter>动画管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleAnimation.h">
+      <Filter>动画管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationBase.h">
+      <Filter>动画管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>输入控制系统</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSystem.h">
+      <Filter>音乐管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveSound.h">
+      <Filter>音乐管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationSystem.h">
+      <Filter>动画管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableAnimation.h">
+      <Filter>动画管理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>错误输出系统</Filter>
+    </ClInclude>
+    <ClInclude Include="InputController.h">
+      <Filter>输入控制系统</Filter>
+    </ClInclude>
+    <ClInclude Include="InputControllerManager.h">
+      <Filter>输入控制系统</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleApp.h">
+      <Filter>应用框架</Filter>
+    </ClInclude>
+    <ClInclude Include="WMain.h">
+      <Filter>应用框架</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSystem.h">
+      <Filter>时间控制系统</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeController.h">
+      <Filter>时间控制系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>基础类</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeEvent.h">
+      <Filter>时间控制系统</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipFilter.h">
+      <Filter>基础类</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleClipFilter.h">
+      <Filter>基础类</Filter>
+    </ClInclude>
+    <ClInclude Include="Default.h">
+      <Filter>基础类</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingObject.h">
+      <Filter>碰撞处理系统</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex2D.h">
+      <Filter>基础类\cpp文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletTimeControl.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="TankInputControl.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockBoundingHandler.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="TankBoundingObject.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="TankFight.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="InitialInterface.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="InitialInputControl.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletBoundingControl.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="Home.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="HomeBoundingControl.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBoundingControl.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTimeController.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBoundingController.h">
+      <Filter>TankFight</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4825542-E13C-4D5E-BE19-D75213867770}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\常用软件\vs2012\VC\boost;D:\Documents\Visual Studio 2012\Projects\Engine\Engine;D:\常用软件\DirectX\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\常用软件\DirectX\Samples\C++\Effects11\Debug;D:\external\lib;D:\常用软件\DirectX\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\常用软件\vs2012\VC\boost;D:\Documents\Visual Studio 2012\Projects\Engine\Engine;D:\常用软件\DirectX\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\常用软件\DirectX\Samples\C++\Effects11\Debug;D:\external\lib;D:\常用软件\DirectX\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dinput8.lib;d2d1.lib;dxguid.lib;Windowscodecs.lib;Winmm.lib;OpenAL32.lib;alut.lib;fmodvc.lib;DWrite.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>D:\Documents\Visual Studio 2012\Projects\Engine\Engine;D:\常用软件\Lua\5.1\lib;D:\常用软件\vs2012\VC\boost\stage\lib;D:\常用软件\DirectX\Samples\C++\Effects11\Debug;D:\external\lib;D:\常用软件\DirectX\Lib\x86;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dinput8.lib;d2d1.lib;dxguid.lib;Windowscodecs.lib;Winmm.lib;dwrite.lib;OpenAL32.lib;alut.lib;fmodvc.lib;libboost_thread-vc110-mt-gd-1_53.lib</AdditionalDependencies>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dinput8.lib;d2d1.lib;dxguid.lib;Windowscodecs.lib;Winmm.lib;OpenAL32.lib;alut.lib;fmodvc.lib;DWrite.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AlphaAnimation.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationBase.h" />
+    <ClInclude Include="AnimationGroup.h" />
+    <ClInclude Include="AnimationSystem.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="BlockBoundingHandler.h" />
+    <ClInclude Include="BoundingEntity.h" />
+    <ClInclude Include="BoundingObject.h" />
+    <ClInclude Include="BoundingRectangle.h" />
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletBoundingControl.h" />
+    <ClInclude Include="BulletTimeControl.h" />
+    <ClInclude Include="ClipFilter.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="D2DDrawTool.h" />
+    <ClInclude Include="Default.h" />
+    <ClInclude Include="DrawTool.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyBoundingControl.h" />
+    <ClInclude Include="EnemyTimeController.h" />
+    <ClInclude Include="GlobalFunction.h" />
+    <ClInclude Include="GraphType.h" />
+    <ClInclude Include="Home.h" />
+    <ClInclude Include="HomeBoundingControl.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="InitialInputControl.h" />
+    <ClInclude Include="InitialInterface.h" />
+    <ClInclude Include="InputController.h" />
+    <ClInclude Include="InputControllerManager.h" />
+    <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="IntersectionBlock.h" />
+    <ClInclude Include="IntersectionSystem.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemBoundingController.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Matrix3x3.h" />
+    <ClInclude Include="MovableAnimation.h" />
+    <ClInclude Include="RectangleClipFilter.h" />
+    <ClInclude Include="ScaleAnimation.h" />
+    <ClInclude Include="SimpleApp.h" />
+    <ClInclude Include="SoundSystem.h" />
+    <ClInclude Include="SwapChain2D.h" />
+    <ClInclude Include="Tank.h" />
+    <ClInclude Include="TankBoundingObject.h" />
+    <ClInclude Include="TankFight.h" />
+    <ClInclude Include="TankInputControl.h" />
+    <ClInclude Include="TimeController.h" />
+    <ClInclude Include="TimeEvent.h" />
+    <ClInclude Include="TimeSystem.h" />
+    <ClInclude Include="Vertex2D.h" />
+    <ClInclude Include="WaveSound.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="WMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlphaAnimation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AnimationGroup.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AnimationSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="BoundingEntity.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="BoundingRectangle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="BoundingSphere.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="D2DDrawTool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DrawTool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="GlobalFunction.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Home.cpp" />
+    <ClCompile Include="InitialInterface.cpp" />
+    <ClCompile Include="InputControllerManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="IntersectionBlock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="IntersectionSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Matrix3x3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MovableAnimation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RectangleClipFilter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ScaleAnimation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SimpleApp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SoundSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SwapChain2D.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="TankFight.cpp" />
+    <ClCompile Include="TimeEvent.cpp" />
+    <ClCompile Include="TimeSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Vertex2D.cpp" />
+    <ClCompile Include="WaveSound.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
